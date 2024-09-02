@@ -17,8 +17,6 @@ namespace TaskManagmentSystemPortfolio.Server
 
             builder.Configuration.Bind("JWTConfig", new JWTConfig());
 
-            Console.WriteLine(JWTConfig.SecretKey);
-
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
